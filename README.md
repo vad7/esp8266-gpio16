@@ -1,42 +1,12 @@
 ESP8266 - Driver for GPIO
 =========================
 
+Номер пина = GPIO_x
+
 <b>Схема подключения 2 кнопок к ESP-01:</b><br>
 Кнопка 1 подключена к GPIO0 (Pin 3) ESP-01<br>
 Кнопка 2 подключена к GPIO2 (Pin 4) ESP-01<br>
 
-<b>Таблица соответствия виртуальных выводов реальным:</b>
-
-<a id="gpio_map"></a>
-<table>
-  <tr>
-    <th scope="col">Индекс</th><th scope="col">Пин ESP8266</th><th scope="col">Индекс</th><th scope="col">Пин ESP8266</th>
-  </tr>
-  <tr>
-    <td>0 [*]</td><td>GPIO16</td><td>8</td><td>GPIO15</td>
-  </tr>
-  <tr>
-    <td>1</td><td>GPIO5</td><td>9</td><td>GPIO3</td>
-   </tr>
-   <tr>
-    <td>2</td><td>GPIO4</td><td>10</td><td>GPIO1</td>
-  </tr>
-  <tr>
-    <td>3</td><td>GPIO0</td><td>11</td><td>GPIO9</td>
-   </tr>
-   <tr>
-    <td>4</td><td>GPIO2</td><td>12</td><td>GPIO10</td>
-  </tr>
-  <tr>
-    <td>5</td><td>GPIO14</td><td></td><td></td>
-   </tr>
-   <tr>
-    <td>6</td><td>GPIO12</td><td></td><td></td>
-  </tr>
-  <tr>
-    <td>7</td><td>GPIO13</td><td></td><td></td>
-   </tr>
-</table>
 <b>[*] Вывод D0 (GPIO16) можно использовать только на чтение и запись. Прерывания не поддерживаются, использование этого выводя для шин i2c, one-wire невозможно.</b>
 
 <b>Сборка под Windows:</b><br>
@@ -61,38 +31,8 @@ make flash
 Button 1 is connected to GPIO0 (Pin 3) ESP-01<br>
 Button 2 is connected to GPIO2 (Pin 4) ESP-01<br>
 
-<b>GPIO table</b>
+Flat pin numbering: 0 - 16
 
-<a id="gpio_map"></a>
-<table>
-  <tr>
-    <th scope="col">IO index</th><th scope="col">ESP8266 pin</th><th scope="col">IO index</th><th scope="col">ESP8266 pin</th>
-  </tr>
-  <tr>
-    <td>0 [*]</td><td>GPIO16</td><td>8</td><td>GPIO15</td>
-  </tr>
-  <tr>
-    <td>1</td><td>GPIO5</td><td>9</td><td>GPIO3</td>
-   </tr>
-   <tr>
-    <td>2</td><td>GPIO4</td><td>10</td><td>GPIO1</td>
-  </tr>
-  <tr>
-    <td>3</td><td>GPIO0</td><td>11</td><td>GPIO9</td>
-   </tr>
-   <tr>
-    <td>4</td><td>GPIO2</td><td>12</td><td>GPIO10</td>
-  </tr>
-  <tr>
-    <td>5</td><td>GPIO14</td><td></td><td></td>
-   </tr>
-   <tr>
-    <td>6</td><td>GPIO12</td><td></td><td></td>
-  </tr>
-  <tr>
-    <td>7</td><td>GPIO13</td><td></td><td></td>
-   </tr>
-</table>
 <b>[*] D0(GPIO16) can only be used as gpio read/write. no interrupt supported. no pwm/i2c/ow supported.</b>
 
 <b>Building on Windows:</b><br>
