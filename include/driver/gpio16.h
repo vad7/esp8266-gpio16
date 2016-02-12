@@ -2,23 +2,9 @@
     Driver for GPIO
     Official repository: https://github.com/CHERTS/esp8266-gpio16
 
-    Copyright (C) 2015 Mikhail Grigorev (CHERTS)
+	Modified vad7
 
-    Pin number:
-    -----------
-    Pin 0 = GPIO16
-    Pin 1 = GPIO5
-    Pin 2 = GPIO4
-    Pin 3 = GPIO0
-    Pin 4 = GPIO2
-    Pin 5 = GPIO14
-    Pin 6 = GPIO12
-    Pin 7 = GPIO13
-    Pin 8 = GPIO15
-    Pin 9 = GPIO3
-    Pin 10 = GPIO1
-    Pin 11 = GPIO9
-    Pin 12 = GPIO10
+    Pin number = GPIOx:
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -40,7 +26,7 @@
 
 #include "gpio.h"
 
-#define GPIO_PIN_NUM 13
+#define GPIO_PIN_NUM 17
 #define GPIO_INTERRUPT_ENABLE 1
 
 #define GPIO_FLOAT 0
